@@ -1,11 +1,16 @@
 // @flow
 import { connect } from 'react-redux';
 import Home from '../components/Home';
+import { setPerson } from '../actions/home';
 
-function mapStateToProps(store) {
+function mapStateToProps({ home: { person } }) {
+  return { person };
+}
+
+function mapDispatchToProps(dispatch) {
   return {
-    greeting: store.greeting || 'Hello, anyone there?'
+    setPerson: (person) => dispatch(setPerson(person))
   };
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

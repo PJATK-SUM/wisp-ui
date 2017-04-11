@@ -150,6 +150,8 @@
   },
   "dependencies": {
     "electron-debug": "^1.1.0",
+    "electron-log": "^2.0.2",
+    "firebase": "^3.6.4",
     "font-awesome": "^4.7.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
