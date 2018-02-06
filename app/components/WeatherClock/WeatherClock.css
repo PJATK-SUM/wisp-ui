@@ -1,0 +1,26 @@
+.self {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 1.25em;
+}
